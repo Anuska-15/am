@@ -6,6 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+      <!-- font-awesome -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/logo-final.png" />
     <!-- Author Meta -->
@@ -34,6 +39,9 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,500,600"
       rel="stylesheet"
     />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--
 		CSS
 		============================================= -->
@@ -51,11 +59,18 @@
 
     <!-- <link rel="stylesheet" href="css/bootstrap-get.css"> -->
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/colour.css"/>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="new.js"></script>
   </head>
 
   <body>
     <!-- PRELOADER START-->
-    <!-- <div class="preloader">
+    <!--<div class="preloader">
       <div class="preloader__container">
         <h1 style="color: snow;" class="preloader__container__percent"></h1>
         <div class="preloader__container__preload">
@@ -66,11 +81,11 @@
         </div>
       </div>
     </div>
-    <!-- PRELOADER END-->
-    <div id="loading"></div>
-    <div id="top"></div> -->
-    <!-- Start Header Area -->
-    <header class="default-header">
+    PRELOADER END-->
+    <!--<div id="loading"></div>
+    <div id="top"></div>
+     Start Header Area -->
+    <!--<header class="default-header">
       <div class="sticky-header">
         <div class="container">
           <div
@@ -88,8 +103,8 @@
                   <li><a href="#explore">about</a></li>
                   <li><a href="#tform">Join Us</a></li>
                   <li><a href="#team">Team</a></li>
-                  <!-- <li><a href="#blog">Blog</a></li> -->
-                  <li><a href="#contact">Contact</a></li>
+                   <li><a href="#blog">Blog</a></li> -->
+                 <!-- <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="#" class="mobile-btn"
                   ><span class="lnr lnr-menu"></span
@@ -114,9 +129,9 @@
         </div>
       </div>
     </header>
-    <!-- End Header Area -->
+     End Header Area -->
     <!-- Start Banner Area -->
-    <section class="banner-area relative">
+    <!--<section class="banner-area relative">
       <div class="container">
         <div class="row fullscreen justify-content-center align-items-center">
           <div class="col-md-6 offset-md-6">
@@ -126,18 +141,84 @@
                 Entrepreneurship Accords and Startup Growth Traffic
               </h3>
 
-              <!-- <a href="#about-section" class="primary-btn banner-btn">Explore Us</a> -->
+              <a href="#about-section" class="primary-btn banner-btn">Explore Us</a> -->
 
               <!-- <a href="#about-section"><span id="scroll"></span></a> -->
-            </div>
+            <!--</div>
           </div>
         </div>
 
-        <!-- <section id="section10" class="demo">
+         <section id="section10" class="demo">
 					<a href="#explore"><span></span>Explore</a>
 				</section>	 -->
+     <!-- </div>
+    </section>-->
+
+    <div id="loading"></div>
+    <div id="top"></div>
+
+    <section id="homepage" class="home">
+      <nav class="navbar sticky-header" data-aos="fade-up" onscroll="myFunc()">
+        <div class="nav-header">
+          <a href="#index.html">
+            <img class="logo" src="img/vector/east 2-01.png" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar-links links">
+          <ul class="nav-links">
+            <li><a href="#homepage">home</a></li>
+            <li><a href="#about-section">about</a></li>
+            <li><a href="#tform">join us</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="toggle">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="main-container" data-aos="fade-left"> 
+        <div class="main-text"></div>
+        <h1 class="text-heading">
+          Entrepreneurship Accords and Startup Growth Traffic
+        </h1>
+        <p class="text-subheading">
+          with the aim of building nation wide network of entrepreneurship
+          cells.
+        </p>
+      </div>
+      <div class="social-media" data-aos="fade-down">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.instagram.com/_e.a.s.t/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/EASTVSSUT/"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/entrepreneurship-accords-startup-growth-and-traffic/"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <div class="down-arrow" data-aos="fade-down">
+          <a href="#about-section"><i class="fas fa-sort-down"></i></a>
+          <a href="#about-section"><i class="fas fa-sort-down"></i></a>
+          <a href="#about-section"><i class="fas fa-sort-down"></i></a>
+        </div>
+      </div>
+      <div id="slider" class="slider">
+        <ul class="nav-links">
+          <li><a href="#homepage">home</a></li>
+          <li><a href="#about-section">about</a></li>
+          <li><a href="#tform">join us</a></li>
+          <li><a href="#team">team</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
       </div>
     </section>
+
+
 
     <!-- End Banner Area -->
     <script>
@@ -154,7 +235,7 @@
     </script>
 
     <!-- Start About Area -->
-    <section id="explore">
+   
       <div class="site-section bg-light" id="about-section">
         <div class="container">
           <div class="row mb-5">
@@ -194,7 +275,7 @@
               </p>
             </div>
           </div>
-          <div class="row mb-5">
+          <!--<div class="row mb-5">
             <div class="col-md-6" data-aos="fade-right">
               <img src="img/vector/mission.png" alt="Image" class="img-fluid" />
             </div>
@@ -206,9 +287,9 @@
               >
                 Our Mission and Vision
               </h2>
-              <!--   <p class="mb-4">Power lies in togetherness. We as an individual can stand against odds always but as an amalgamation we stand stronger. With a very competent team and strong determination, E. A. S. T by E-Cell, VSSUT envisions to promote enterpreneurial spirits and fabricate the startup culture in the state of Odisha and in the whole nation. With mutual understanding and cooperation, we can definitely make this programme a grand success and contribute towards country's development.</p> -->
+              <p class="mb-4">Power lies in togetherness. We as an individual can stand against odds always but as an amalgamation we stand stronger. With a very competent team and strong determination, E. A. S. T by E-Cell, VSSUT envisions to promote enterpreneurial spirits and fabricate the startup culture in the state of Odisha and in the whole nation. With mutual understanding and cooperation, we can definitely make this programme a grand success and contribute towards country's development.</p> -->
 
-              <ul
+             <!-- <ul
                 class="list-display list-checkmarks list-group list-group-flush mb-5"
               >
                 <div data-aos="zoom-in">
@@ -250,10 +331,70 @@
                 </div>
               </ul>
             </div>
+          </div>-->
+          <div class="mission" data-aos="fade-up">
+            <h3 class="mission-text"><span class="span-element-1">Our</span> Missions <span class="span-element-1">and </span>Objectives</h3>
+          </div>
+        <div class="card-container">
+          <div class="card-1 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/Entreprenuretial spirit.png" alt="">
+            </div>
+            <div class="card-content" >
+              <p class="card-text">To promote entrepreneurial spirits.</p>
+            </div>
+          </div>
+          <div class="card-2 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/fund.png" alt="">
+            </div>
+            <div class="card-content">
+              <p class="card-text">Promote and spread startup culture nationwide.</p>
+            </div>
+          </div>
+          <div class="card-3 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/mindset.png" alt="">
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Work to make the most of
+                the resources available.
+              </p>
+            </div>
+          </div>
+          <div class="card-4 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/brainstorm.png" alt="">
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Establishment with highly efficient
+                entrepreneurial mindsets
+              </p>
+            </div>
+          </div>
+          <div class="card-5 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/knowledge.png" alt="">
+            </div>
+            <div class="card-content">
+              <p class="card-text">To outshine and prosper with competitive spirit.</h2>
+            </div>
+          </div>
+          <div class="card-6 cards" data-aos="fade-up">
+            <div class="card-images">
+                <img class="card-img" src="img/vector/competitive.png" alt="">
+            </div>
+            <div class="card-content">
+              <p class="card-text">To lead forward with unison withholding a solid foundation</h2>
+            </div>
           </div>
         </div>
+      
+        </div>
       </div>
-    </section>
+    
 
     <!-- <section id="explore" class="section-full gray-bg py-5">
 		<div class="container" >
@@ -402,19 +543,19 @@
 
     <!-- <div style="background-color: #f9f8ff;"> -->
 
-    <div class="container">
+   <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="area-title" style="text-align: center;">
             <h2 class="section-line" id="red" ; style="padding-top: 10px;">
               Why Choose
-              <span style="color: rgba(38, 46, 64, 0.8);">E.A.S.T</span>
+              <span style="color: black;">E.A.S.T</span>
             </h2>
-            <br />
+            <br>
           </div>
         </div>
       </div>
-
+    <div class="bkg">
       <div class="row">
         <div class="first col-xl-4 col-lg-4 col-md-6 mb-30" data-aos="zoom-out">
           <div class="wc-hover our-features-wrapper boxx">
@@ -532,7 +673,8 @@
         </div>
       </div>
     </div>
-
+   </div>
+  
     <!-- test end -->
 
     <!-- Start Digital Studio -->
@@ -542,9 +684,8 @@
           <div class="col-lg-6 col-md-12" style="padding: 35px;">
             <h2
               class="section-line text-uppercase text-center pt-5"
-              style="color: red;"
-            >
-              Join Us
+              style="color: red;">
+                Join Us
             </h2>
             <p class="mt-4" style="font-size: 18px;">
               Having super transparent policies and methods of proceedings, it
@@ -560,8 +701,7 @@
                 href="https://form.typeform.com/to/TH7ud8hx"
                 data-mode="popup"
                 target="_blank"
-                >Register Here</a
-              >
+                >Register Here</a>              
             </div>
 
             <script>
@@ -791,6 +931,21 @@
               <div class="author text-center">
                 <h6 class="text-uppercase">
                   <a href="http://edcuiet.in/" target="_blank">E-Cell,UIET,Chandigarh</a>
+                </h6>
+                <span></span>
+              </div>
+            </div>
+			
+			<div class="single-testimonial">
+              <div class="box">
+                <a href="http://ecell-imtg.com/" target="_blank">
+                  <img src="img/IMTG.png" class="img-circle"  alt="" 
+                /></a>
+              </div>
+
+              <div class="author text-center">
+                <h6 class="text-uppercase">
+                  <a href="http://ecell-imtg.com/" target="_blank">E-Cell,IMT,Ghaziabad</a>
                 </h6>
                 <span></span>
               </div>
@@ -1872,58 +2027,72 @@
                   </div>
                 </div>
               </div> -->
-              
-                <div id="faqs" class="container">
+
+              <div id="faqs" class="container">
                   
-                  <div id="faqSection" class="fullwidth-container">
-                    <div>
-                      <button class="collapsible">Do you work full time as a developer?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
-                      <button class="collapsible">Do you require a deposit before working?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
-                      <button class="collapsible">Will I own the website?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
-                      <button class="collapsible">Are there other costs involved?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                        <ul>
-                          <li>Custom LI</li>
-                          <li>Custom LI</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.Contact me via <a href="mailto:#" target="_blank">EMAIL</a> and I will be more than happy to answer your queries.</p>
-                      </div>
+                <div id="faqSection" class="fullwidth-container">
+                  <div>
+                    <button class="collapsible">What is EAST and Why EAST?</button>
+                    <div class="faq-content">
+                      <p>EAST (Entrepreneurship Accords and Startup growth Traffic)
+                        is a network building programme by E-Cell, VSSUT which aims
+                        to collaborate with similar organisations and to foster
+                        entrepreneurship. EAST can be a great platform where various
+                        E-cells can come together and share their resources and
+                        enhance their network for mutual benefits.</p>
                     </div>
-                    <div>
-                      <button class="collapsible">What is hosting? Will I need it?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                        <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
-                      <button class="collapsible">Will you work for equity on a new idea I have?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                        <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
-                      <button class="collapsible">How much experience do you have?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                      </div>
-                      <button class="collapsible">What if I need changes. Can I edit it myself?</button>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                        <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                      </div>
+                    <button class="collapsible">Can you help us to set up an E-cell at our college? (If not
+                      already).</button>
+                    <div class="faq-content">
+                      <p>Yes. Encouraging entrepreneurial spirits among the colleges
+                        is what we aim for. So we can assist to form an E-Cell in
+                        your college from scratch if not already existing.</p>
+                    </div>
+                    <button class="collapsible">Is there any monetary policy?</button>
+                    <div class="faq-content">
+                      <p>No. There is no monetary policy, we believe in working on
+                        mutual cooperation and interest.</p>
+                    </div>
+                    <button class="collapsible">Up to what stage will EAST help different student
+                      entrepreneurs and their startups to grow?</button>
+                    <div class="faq-content">
+                      <p>As the aim suggests, we work on enhancing contacts which can
+                        further be used as an opportunity in developing and
+                        upholding of any startup. EAST can provide opportunities
+                        sharing platform to the startups.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="collapsible">How to be a member of the programme EAST?</button>
+                    <div class="faq-content">
+                      <p>For having the membership in EAST you just have to fill in
+                        basic details on the website through Typeform available in
+                        the website and further proceedings will be carried out by
+                        our admins.</p>
+                    </div>
+                    <button class="collapsible">What makes an E-cell qualified/unqualified for being a part of
+                      EAST or do(s) and don’t(s)?</button>
+                    <div class="faq-content">
+                      <p>The only criteria for any E-Cell is just to be a registered
+                        entrepreneurship society of their institutes. For do(s) and
+                        don't(s) part, you have to abide by all the terms and
+                        conditions of MoU and anything against that would lead to
+                        the banishment of that E-Cell from the programme.</p>
+                    </div>
+                    <button class="collapsible">How long will the collaboration last?</button>
+                    <div class="faq-content">
+                      <p>The collaboration will last for six months for minimum and
+                        further, it will be depending upon the MoU agreement.</p>
+                    </div>
+                    <button class="collapsible">Any contract or agreement we have to sign beforehand?</button>
+                    <div class="faq-content">
+                      <p>Yes. To maintain some common grounds on any action to be
+                        taken by the programme, we shall sign a Memorandum of
+                        Understand (MoU).</p>
                     </div>
                   </div>
                 </div>
-               
-              
+              </div>
             </div>
           </div>
 
@@ -1992,7 +2161,7 @@ for (i = 0; i < coll.length; i++){
                 >
                 <div class="container text-center text">
                   <a
-                    class="typeform-share buttont my-4 px1-4"
+                    class="typeform-share buttont my-4 px-4"
                     id="type"
                     href="https://form.typeform.com/to/TH7ud8hx"
                     data-mode="popup"
@@ -2251,6 +2420,7 @@ for (i = 0; i < coll.length; i++){
     <script src="js/preloader.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/home.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

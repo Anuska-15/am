@@ -1,4 +1,5 @@
 // Gsap 3 version
+
 const preloadDot = $(".preloader__container__preload__dot");
 const tl = gsap.timeline({ repeat: 3 });
 tl
