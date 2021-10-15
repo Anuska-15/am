@@ -1659,7 +1659,7 @@ footer .footer-nav li a:hover {
 .subscription .newsletter-btn {
   width: 42px;
   height: 40px;
-  line-height: 48px;
+  line-height: 42px;
   text-align: center;
   background: transparent;
   color: #fff;
@@ -1758,6 +1758,7 @@ footer .footer-nav li a:hover {
   background-color: rgba(245, 0, 0, 0.9);
   color: #fff;
 }
+
 /* 
 @media (max-width: 767px){
   #type{
@@ -1788,6 +1789,7 @@ footer .footer-nav li a:hover {
   outline: none;
   background-color: rgb(190, 4, 3);
 } */
+/* network-caraousal */
 
 /* ----------------------
 ------SWIPER------------
@@ -1802,16 +1804,21 @@ footer .footer-nav li a:hover {
   background-size: cover;
   width: 300px;
   height: 395px;
-  background: white;
+  background: rgb(236, 236, 236);
+  /* background-color: transparent; */
+  border-radius: 12px;
 }
 .swiper-slide .image {
   width: 100%;
   height: 300px;
   overflow: hidden;
   background: #fff;
+  box-shadow: 5px 4px 4px 3px #313538;
+  
 }
 .swiper-slide .image img {
   width: 100%;
+  border-radius: 4px;
 }
 .swiper-slide .details {
   box-sizing: border-box;
@@ -1822,10 +1829,11 @@ footer .footer-nav li a:hover {
   margin: 0;
   padding: 15px;
   font-size: 15px;
-  color: #222222;
+  color: #c76a13;
 }
+
 .swiper-slide .details p {
-  color: #777777;
+  color: #afafaf;
   font-size: 12;
   font-weight: 300;
   line-height: 1.5em;
@@ -1837,7 +1845,7 @@ footer .footer-nav li a:hover {
 }
 .swiper-pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #d9534f;
+  background: #750805;
 }
 .swiper-slide .details .social a {
   color: #868e96;
@@ -1846,7 +1854,7 @@ footer .footer-nav li a:hover {
   padding-bottom: 0px;
 }
 .swiper-slide .details .social a:hover {
-  color: #d9534f;
+  color: #0d2bb1;
 }
 /* END OF SWIPER*/
 
@@ -2021,9 +2029,9 @@ footer .footer-nav li a:hover {
   transition: transform 0.1s ease-in-out;
 }
 .accordion-item-header.active::after {
-  /*content: "\2212";*/
-  transform: rotate(180deg);
-}
+  content: "\2212";
+  transform: rotate(180deg); 
+} */
 .accordion-item-body {
   max-height: 0;
   overflow: hidden;
@@ -2036,7 +2044,7 @@ footer .footer-nav li a:hover {
 }
 .accordion-item-header.active {
   color: red;
-}
+} 
 /*.accordion-item-header.active + .accordion-item-body{
     max-height: auto;
 }*/
@@ -2045,7 +2053,7 @@ footer .footer-nav li a:hover {
     font-size: 14px;
   }
   /* .fifth  .boxx:hover:before{height: 300px;}, .boxx:hover:after{height: 385px;} */
-} */
+}
 
 .containe {
   float: left;
@@ -2105,11 +2113,12 @@ text-shadow: 1px 1px 1px rgb(0 0 0);
     width: 46%;
     margin: 0 2%;
     overflow: hidden;
+    border-radius: 7px 7px 7px 7px ;
   }
   #faqSection .collapsible {
     background-color: #112240;
     border: 1px solid hsla(0,0%,51.4%,.16);
-    border-radius: 7px;
+    border-radius: 7px ;
     box-shadow: 0 10px 30px -15px rgb(0 0 0);
     transition: box-shadow .2s ease 0s;
     color: #ccd6f6;
@@ -2164,6 +2173,19 @@ text-shadow: 1px 1px 1px rgb(0 0 0);
     text-shadow: 1px 1px 0 rgb(0 0 0);
   }
 
+  @media screen and (max-width:768px){
+    .fullwidth-container {
+      width: 80%;
+      display: grid;
+      margin:2rem 10%;
+    } 
+    #faqSection div {
+      margin: 0 2%;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
   #pn{
     display:none;
   }
@@ -2174,10 +2196,7 @@ text-shadow: 1px 1px 1px rgb(0 0 0);
     }
 
   }
-
-
 /*END FAQ AREA*/
-
 
 .list-display li {
   margin-bottom: 0.4rem;
@@ -2434,19 +2453,6 @@ text-shadow: 1px 1px 1px rgb(0 0 0);
   }
 }
 
-@media screen and (max-width:768px){
-  .fullwidth-container {
-    width: 80%;
-    display: grid;
-    margin:2rem 10%;
-  } 
-  #faqSection div {
-    margin: 0 2%;
-    width: 100%;
-    overflow: hidden;
-  }
-}
-
 /* Contact us */
 
 .map {
@@ -2502,7 +2508,7 @@ i {
   margin: 0 8px 0 0
 }
 
-button {
+/* button {
   margin: 15px 4px;
   padding: 13px 9px;
   display: inline-block;
@@ -2526,12 +2532,12 @@ button:after {
   display: block;
   font-size: 11px;
   margin-top: 8px
-}
+} */
 
-center .fa-envelope:after {
+/* center .fa-envelope:after {
   content: "Email";
   margin:8px 13px 0;
-}
+} */
 
 @media only screen and (max-width: 720px) {
   .map {
@@ -2547,10 +2553,10 @@ center .fa-envelope:after {
   float: right;
   width: 100%;
   }
-  button {
+  /* button {
   float: right;
   margin-top: -75px
-  }
+  } */
 }
 
 @media only screen and (max-width: 460px) {
@@ -2560,10 +2566,10 @@ center .fa-envelope:after {
   h1 {
   margin-bottom:20px
   }
-  button {
+  /* button {
   float: none;
   margin-top: 10px
-  }
+  } */
   .det {
   margin-bottom: 9px
   }
